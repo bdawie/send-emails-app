@@ -1,0 +1,11 @@
+<div class="emails-list">
+  <p *ngIf="isEmpty">Email's list is empty! Create new email by clicking the button!</p>
+  <div class="card" *ngFor="let email of emails">
+    <h5 class="card-header"> To: {{email.recipient}} <span (click) = "onDeleteEmail(email)" title="Delete E-mail" style="float:right; cursor:pointer;">&times;</span></h5>
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2 text-muted">Subject: {{email.subject}}</h6>
+      <a (click)="showText = !showText"class="btn btn-info">View E-mail Text</a>
+      <p *ngIf="showText" class="card-text mt-2">{{email.emailText}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+form button{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.container-wrapper{
+    display:none;
+}
+.create-email-container{
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    margin: auto;
+    background-color: rgb(204, 202, 224);
+    border-radius: 20px;
+}
+.create-email-container textarea{
+    resize: none;
+}
+
+.active{
+    display: block;
+    position: fixed;
+    width :100%;
+    height: 100%;
+    overflow: auto;
+    left: 0;
+    top:0;
+    z-index: 1;
+    padding-top: 80px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.fa-envelope{
+    font-size: 30px;
+}
