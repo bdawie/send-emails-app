@@ -24,5 +24,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To run the project, download or clone this repo, create and generate new OAuth 2 tokens (ClientSecret, RefreshToken, etc.) using Google API's console and OAuth playground. Then Connect to your MongoDB, run `ng build` command, and navigate to `http://localhost:3000`.
+To run this app, download or clone this repo, create and generate new OAuth 2 tokens (ClientSecret, RefreshToken, etc.) using Google API's console and OAuth playground, set these as ENV variables and then Connect to your MongoDB.
+Run `ng build` command then `node app.js` command and then navigate to `http://localhost:3000`.
 Enjoy!
